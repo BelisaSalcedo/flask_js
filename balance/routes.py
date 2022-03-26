@@ -1,5 +1,6 @@
 from balance import app
+from flask import render_template
 
 @app.route("/")
 def inicio():
-        return "Estoy funcionando"
+    return render_template("index.html")
